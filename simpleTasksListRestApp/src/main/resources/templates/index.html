@@ -29,13 +29,17 @@
     <table class="table table-striped">
         <thead>
         <tr>
-            <th scope="col">#</th>
+            <th hidden scope="col">№</th>
+            <th scope="col"></th>
             <th scope="col">Task name</th>
+            <th scope="col"></th>
         </tr>
         </thead>
         <tbody>
         <tr ng-repeat="(id, item) in tasksItems">
-            <th scope="row">{{item.id}}</th>
+            <th hidden scope="row">{{item.id}}</th>
+            <th>
+                <input type="checkbox" id="item_1">
             <td>{{item.description}}</td>
             <td>
                 <form>

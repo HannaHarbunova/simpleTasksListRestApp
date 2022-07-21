@@ -1,5 +1,4 @@
 let TasksListApp = angular.module('TasksListApp',[]);
-//let identity = 1;
 
 TasksListApp.controller('TaskListController', function($scope, $http){
 
@@ -12,7 +11,6 @@ TasksListApp.controller('TaskListController', function($scope, $http){
         })
 
     $scope.description = '';
-//    $scope.tasksItems = {};
 
     $scope.create  = function(description){
 
@@ -24,9 +22,6 @@ TasksListApp.controller('TaskListController', function($scope, $http){
            resp => {
                 console.error(resp);
            })
-
-//        let id = identity++;
-//        $scope.tasksItems[id] = {id: id, description: description};
 
     }
     $scope.delete = function(item){
